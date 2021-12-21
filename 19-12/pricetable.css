@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 1920px;
+    background-color: #cad3d3;
+}
+
+
+
+.content{
+    margin: 178px 350px;
+    display: flex;
+    position: relative;
+}
+
+.col-third{
+    width: 360px;
+    margin: 10px 20px;
+}
+
+.place{
+    position: relative;
+    background-image: url(ocean.png) ;
+    background-repeat: no-repeat;
+    background-size: 100% 270px;
+    height: 270px;
+    width: 360px;
+}
+
+.place-moutains{
+    background-image: url(mountain.png) !important;
+}
+
+.place-forest{
+    background-image: url(forest.png) !important;
+}
+
+.place-des{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 38%; 
+}
+
+.name-place{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.price-tag{
+    text-align: center;
+    display: block;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: -60px;
+    width: 120px;
+    height: 120px;
+    left: 33.3333%;
+    color: #2196f7;
+}
+
+.price{
+    margin-top: 30px;
+    font-size: 28px
+}
+
+.price-tag>p{
+    font-size: 16px;
+    margin-top: -20px;
+    color: #99a9b5;
+}
+
+.sub-name-place {
+    color: #99a9b5;
+    font-size: 12px;
+}
+
+.new-mark{
+    position: absolute;
+    background-image: url(newmark.png);
+    background-size: 68px;
+    background-repeat: no-repeat;
+    top: -16px;
+    left: -16px;
+    padding: 26px 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.new-mark>p{
+    font-size: 14px;
+    margin-left: 2px;
+    padding: 0px;
+    margin-top: -1px;
+}
+
+.subtitle {
+    background-color: white;
+    
+}
+
+.subtitle li{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    color: #5f727f;
+    padding: 16px 0px;
+    font-size: 15px;
+}
+
+.subtitle >li:first-child{
+    font-size: 22px;
+    padding: 21px 0px;
+}
+
+.second-line{
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.background-f4f6f7{
+    background-color: #f4f6f7 !important;
+}
+
+button.btn-buy {
+    color: #2196f7;
+    border: solid 1px #2196f7;
+    padding: 8px 27px;
+    font-size: 25px;
+    margin: 33px;
+}
+
+.mountains{
+    background-color: #2c2e3d !important;
+    color: #d74498 !important;
+}
+
+.btn-mountains{
+    border-color: #6c136f !important ;
+    color: #6c136f !important;
+}
+.forest{
+    color: #32ad1e !important;
+}
+
+.btn-forest{
+    color: #32ad1e !important;
+    border-color: #32ad1e !important;
+}
+
+.btn-buy:hover{
+    color: white !important;
+    cursor: pointer;
+}
+
+.btn-ocean:hover {
+    background-color: #2196f7;
+}
+
+.btn-mountains:hover{
+    background-color:  #6c136f ;
+}
+
+.btn-forest:hover{
+    background-color: #32ad1e ;
+}
