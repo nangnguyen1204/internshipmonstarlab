@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body{
@@ -43,13 +43,13 @@ body{
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 38%; 
+    top: 115px; 
 }
 
 .name-place{
     color: white;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 38px;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
@@ -68,7 +68,8 @@ body{
 
 .price{
     margin-top: 30px;
-    font-size: 28px
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .price-tag>p{
@@ -79,7 +80,7 @@ body{
 
 .sub-name-place {
     color: #99a9b5;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .new-mark{
@@ -99,6 +100,9 @@ body{
     margin-left: 2px;
     padding: 0px;
     margin-top: -1px;
+    font-weight: bolder;
+    font-family: 'Lato' , sans-serif;
+    letter-spacing: 1px;
 }
 
 .subtitle {
@@ -112,16 +116,16 @@ body{
     text-align: center;
     color: #5f727f;
     padding: 16px 0px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .subtitle >li:first-child{
     font-size: 22px;
-    padding: 21px 0px;
+    padding: 20px 0px;
 }
 
 .second-line{
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 8px;
 }
 
@@ -132,9 +136,10 @@ body{
 button.btn-buy {
     color: #2196f7;
     border: solid 1px #2196f7;
-    padding: 8px 27px;
     font-size: 25px;
-    margin: 33px;
+    margin: 34px;
+    height: 50px;
+    width: 170px;
 }
 
 .mountains{
