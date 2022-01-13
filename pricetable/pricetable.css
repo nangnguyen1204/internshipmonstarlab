@@ -2,19 +2,37 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 body{
-    width: 1920px;
     background-color: #cad3d3;
 }
 
 
 
 .content{
-    margin: 178px 350px;
+    margin: 100px 0px;
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1175px){
+    .content{
+        flex-direction: column;
+    }
+    .col-third{
+        margin-bottom: 100px !important;
+    }
+}
+
+@media screen and (max-width:400px){
+    .new-mark{
+        transform: translate(-10px, -290px) !important;
+    }
 }
 
 .col-third{
@@ -25,10 +43,23 @@ body{
 .place{
     position: relative;
     background-image: url(ocean.png) ;
-    background-repeat: no-repeat;
-    background-size: 100% 270px;
-    height: 270px;
+    background-size: cover;
     width: 360px;
+}
+
+.place::before{
+    content: "";
+    display: block;
+    padding-top: 75% ;
+}
+
+.blur {
+    top: 0;
+    background-color: #393d50;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    opacity: 70%;
 }
 
 .place-moutains{
@@ -43,39 +74,38 @@ body{
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 115px; 
+    top: 44%; 
 }
 
 .name-place{
     color: white;
-    font-size: 38px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .price-tag{
-    text-align: center;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    top: -60px;
+    transform: translate(100%,-280%);
     width: 120px;
-    height: 120px;
-    left: 33.3333%;
+    padding: 31px 0;
     color: #2196f7;
 }
 
 .price{
-    margin-top: 30px;
     font-size: 30px;
     font-weight: 300;
 }
 
-.price-tag>p{
-    font-size: 16px;
-    margin-top: -20px;
-    color: #99a9b5;
+p.per{
+    font-size: 16px !important;
+    color: #99a9b5 !important;
 }
 
 .sub-name-place {
@@ -86,20 +116,19 @@ body{
 .new-mark{
     position: absolute;
     background-image: url(newmark.png);
-    background-size: 68px;
-    background-repeat: no-repeat;
-    top: -16px;
-    left: -16px;
+    background-size: cover;
+    transform: translate(-16px, -286px);
     padding: 26px 16px;
     font-weight: bold;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .new-mark>p{
     font-size: 14px;
-    margin-left: 2px;
     padding: 0px;
-    margin-top: -1px;
     font-weight: bolder;
     font-family: 'Lato' , sans-serif;
     letter-spacing: 1px;
